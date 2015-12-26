@@ -66,9 +66,7 @@ dependencies {
     testCompile rootProject.ext.libraries.junit
     testCompile rootProject.ext.libraries.mockito
 }
-retrolambda {
-    jdk "C:\\Program Files\\Java\\jdk1.8.0_65"
-}
+
 def buildVersionName(versionMajor, versionMinor, versionPatch) {
     return "${versionMajor}.${versionMinor}.${versionPatch}"
 }
