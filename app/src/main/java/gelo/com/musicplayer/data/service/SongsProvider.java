@@ -67,7 +67,7 @@ public class SongsProvider implements ISongProvider{
                 MediaStore.Audio.Media.ALBUM_ID,
                 MediaStore.Audio.Media.DURATION};
         final String where = MediaStore.Audio.Media.IS_MUSIC + STR_WHERE_MUSIC + " AND ("+MediaStore.Audio.Media.TITLE + " LIKE '%"+keyword+"%' OR "
-                +MediaStore.Audio.Media._ID + " LIKE '%"+keyword+"%' "
+                +MediaStore.Audio.Media._ID + " LIKE '%"+keyword+"%' OR "
                 +MediaStore.Audio.Media.ARTIST + " LIKE '%"+keyword+"%')";
         final Cursor musicCursor = musicResolver.query(musicUri,
                 cursor_cols, where, null, null);
